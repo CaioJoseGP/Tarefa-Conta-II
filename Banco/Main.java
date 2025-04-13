@@ -197,6 +197,8 @@ public class Main {
                                 }
                             }
 
+                            break;
+
                         } else if(i == (arrayConta.size() - 1)) {
                             System.out.println("\nNão foram encontradas contas nesse número! Tente novamente.\n");
                         }
