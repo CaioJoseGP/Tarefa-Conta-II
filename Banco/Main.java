@@ -156,7 +156,7 @@ public class Main {
 
             //5 - Transferir valores de uma conta para outra
             } else if(opcao.equals("5")) {
-                if(!arrayConta.isEmpty() && arrayConta.size() > 2) {
+                if(!arrayConta.isEmpty() && arrayConta.size() >= 2) {
                     System.out.println("\nDigite o número da sua conta:");
                     String numeroContaOrigem = scanLeitura.nextLine();
                     ContaCorrente contaOrigem;
