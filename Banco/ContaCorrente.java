@@ -99,9 +99,18 @@ public class ContaCorrente {
     // }
 
     public void extrato() {
-        System.out.println("\n\nExtrato Bancário Completo\n"
+        System.out.println("\n\n---Extrato Bancário Completo---"
             + "\nNúmero da Conta: " + this.numero
             + "\nTitular: " + this.titularPrimario.getNome()
             + "\nSaldo: " + this.saldo);
+    }
+
+    public boolean buscarNumero(String numero) {
+        if(this.numero.equals(numero)) {
+            return true;
+
+        } else {
+            return false;
+        }
     }
 }

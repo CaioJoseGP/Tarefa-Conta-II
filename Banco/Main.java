@@ -77,7 +77,7 @@ public class Main {
                     for(int i = 0; i < arrayConta.size(); i++) {
                         ContaCorrente contaAux = arrayConta.get(i);
     
-                        if(contaAux.getNumero().equals(numeroConta)) {
+                        if(contaAux.buscarNumero(numeroConta)) {
                             contaAux.extrato();
                             break;
 
@@ -99,7 +99,7 @@ public class Main {
                     for(int i = 0; i < arrayConta.size(); i++) {
                         ContaCorrente contaAux = arrayConta.get(i);
     
-                        if(contaAux.getNumero().equals(numeroConta)) {
+                        if(contaAux.buscarNumero(numeroConta)) {
                             System.out.println("\nConta encontrada! Digite o valor para sacar:");
                             double valor = scanLeitura.nextDouble();
                             scanLeitura.nextLine();
@@ -131,7 +131,7 @@ public class Main {
                     for(int i = 0; i < arrayConta.size(); i++) {
                         ContaCorrente contaAux = arrayConta.get(i);
     
-                        if(contaAux.getNumero().equals(numeroConta)) {
+                        if(contaAux.buscarNumero(numeroConta)) {
                             System.out.println("\nConta encontrada! Digite o valor para depositar:");
                             double valor = scanLeitura.nextDouble();
                             scanLeitura.nextLine();
@@ -164,7 +164,7 @@ public class Main {
                     for(int i = 0; i < arrayConta.size(); i++) {
                         ContaCorrente contaAux = arrayConta.get(i);
     
-                        if(contaAux.getNumero().equals(numeroContaOrigem)) {
+                        if(contaAux.buscarNumero(numeroContaOrigem)) {
                             contaOrigem = contaAux;
 
                             System.out.println("\nConta encontrada!\n");
@@ -175,7 +175,7 @@ public class Main {
                             for(int x = 0; x < arrayConta.size(); x++) {
                                 contaAux = arrayConta.get(x);
 
-                                if(contaAux.getNumero().equals(numeroContaDestino)) {
+                                if(contaAux.buscarNumero(numeroContaDestino)) {
                                     contaDestino = contaAux;
 
                                     System.out.println("\nConta encontrada!\n");
